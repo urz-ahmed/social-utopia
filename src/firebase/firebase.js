@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 import {getFirestore, collection} from 'firebase/firestore'
 const firebaseConfig = {
-  apiKey: "AIzaSyCawIAPBNWwBnmdx0OQ6Xd6O8RsNAiQChQ",
-  authDomain: "social-utopia-da98f.firebaseapp.com",
-  projectId: "social-utopia-da98f",
-  storageBucket: "social-utopia-da98f.appspot.com",
-  messagingSenderId: "892685220806",
-  appId: "1:892685220806:web:4a7b85d90028cc278b90c7"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGE_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 
